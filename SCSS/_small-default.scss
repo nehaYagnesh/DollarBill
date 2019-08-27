@@ -84,9 +84,15 @@ main {
     color: $primaryColor;
   }
   figure.photo {
-    width: 100%;
+    width: 100% -$gutterDouble;
+    margin: 0.5rem $gutter;
+    border: 1px solid $primaryColor;
     img {
       width: 100%;
+    }
+    figcaption {
+      text-align: center;
+      color: $primaryColor;
     }
   }
 }

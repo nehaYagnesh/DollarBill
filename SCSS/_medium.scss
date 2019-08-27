@@ -1,0 +1,8 @@
+//Main
+main {
+  figure.photo {
+    width: 50% - $gutterDouble;
+    margin: 0.5rem $gutter;
+    float: left;
+  }
+}

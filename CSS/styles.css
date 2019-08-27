@@ -246,10 +246,16 @@ main h1 {
   color: Navy;
 }
 main figure.photo {
-  width: 100%;
+  width: 96%;
+  margin: 0.5rem 2%;
+  border: 1px solid Navy;
 }
 main figure.photo img {
   width: 100%;
+}
+main figure.photo figcaption {
+  text-align: center;
+  color: Navy;
 }
 
 footer {
@@ -269,6 +275,13 @@ footer p {
   clear: both;
 }
 
+@media only screen and (min-width: 560px) {
+  main figure.photo {
+    width: 46%;
+    margin: 0.5rem 2%;
+    float: left;
+  }
+}
 /* end of media query for medium  */
 /* end of media query for large */
 
