@@ -1,0 +1,24 @@
+/*Prevent adjustment of font size after orientation in IE*/
+
+html {
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+/* Apply a natural box layout to all elements */
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: red;
+}
+
+h1 {
+  color: $primaryColor;
+}
+
+footer {
+  background-color: $primaryColor;
+}
