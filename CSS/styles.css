@@ -185,28 +185,91 @@ html {
 }
 
 body {
-  background-color: red;
+  font-family: "Old Standard TT", serif;
+  background-color: white;
+  font-weight: 400;
+  font-size: 16px;
 }
 
-h1 {
-  color: blue;
+header {
+  background-color: Navy;
+  color: darkGray;
+  padding: 1rem 2%;
+}
+header h1 {
+  font-size: 2rem;
+  font-weight: 700;
+}
+header h2 {
+  font-size: 0.9rem;
+  font-weight: 400;
+}
+
+nav {
+  background-color: darkGray;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+}
+nav ul li {
+  float: left;
+  width: 25%;
+  border-right: 1px solid rgba(0, 0, 0, 0.4);
+}
+nav ul li a {
+  display: block;
+  text-decoration: none;
+  text-align: center;
+  color: Navy;
+  font-weight: 700;
+  padding: 0.5rem 0;
+  transition: background 0.75s ease, color 0.75s ease;
+}
+nav ul li a:hover {
+  color: darkGray;
+  background-color: Navy;
+}
+nav ul li.active a {
+  background-color: dimgray;
+}
+nav ul li:last-child {
+  border-right: none;
+}
+
+main figure.banner {
+  width: 100%;
+}
+main figure.banner img {
+  width: 100%;
+}
+main h1 {
+  font-size: 2rem;
+  margin: 1rem 0 0 2%;
+  color: Navy;
+}
+main figure.photo {
+  width: 100%;
+}
+main figure.photo img {
+  width: 100%;
 }
 
 footer {
-  background-color: blue;
+  background-color: Navy;
+  color: white;
+}
+footer p {
+  color: darkGray;
+  text-align: center;
+  font-size: 0.9rem;
+  padding: 0.75rem 0;
 }
 
-@media only screen and (min-width: 560px) {
-  body {
-    background-color: green;
-  }
+.clearFix:after {
+  content: "";
+  display: table;
+  clear: both;
 }
+
 /* end of media query for medium  */
-@media only screen and (min-width: 1140px) {
-  body {
-    background-color: yellow;
-  }
-}
 /* end of media query for large */
 
 /*# sourceMappingURL=styles.css.map */

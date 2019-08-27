@@ -11,14 +11,100 @@ html {
   box-sizing: border-box;
 }
 
+// Body
 body {
-  background-color: red;
+  font-family: $defaultFont;
+  background-color: white;
+  font-weight: $normalFontWeight;
+  font-size: 16px;
+}
+// Header
+header {
+  background-color: $primaryColor;
+  color: $secondaryColor;
+  padding: 1rem $gutter;
+
+  h1 {
+    font-size: 2rem;
+    font-weight: $boldFontWeight;
+  }
+  h2 {
+    font-size: 0.9rem;
+    font-weight: $normalFontWeight;
+  }
 }
 
-h1 {
-  color: $primaryColor;
+//Nav
+nav {
+  background-color: $secondaryColor;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+  ul {
+    li {
+      float: left;
+      width: 25%;
+      border-right: 1px solid rgba(0, 0, 0, 0.4);
+      a {
+        display: block;
+        text-decoration: none;
+        text-align: center;
+        color: $primaryColor;
+        font-weight: $boldFontWeight;
+        padding: 0.5rem 0;
+        transition: background 0.75s ease, color 0.75s ease;
+      }
+      a:hover {
+        color: $secondaryColor;
+        background-color: $primaryColor;
+      }
+    }
+
+    li.active {
+      a {
+        background-color: darken($secondaryColor, 25%);
+      }
+    }
+
+    li:last-child {
+      border-right: none;
+    }
+  }
 }
 
+//Main
+main {
+  figure.banner {
+    width: 100%;
+    img {
+      width: 100%;
+    }
+  }
+  h1 {
+    font-size: 2rem;
+    margin: 1rem 0 0 $gutter;
+    color: $primaryColor;
+  }
+  figure.photo {
+    width: 100%;
+    img {
+      width: 100%;
+    }
+  }
+}
+//Footer
 footer {
   background-color: $primaryColor;
+  color: white;
+  p {
+    color: $secondaryColor;
+    text-align: center;
+    font-size: 0.9rem;
+    padding: 0.75rem 0;
+  }
+}
+
+//Misc
+.clearFix:after {
+  content: "";
+  display: table;
+  clear: both;
 }
