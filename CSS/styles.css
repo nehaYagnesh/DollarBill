@@ -257,6 +257,23 @@ main figure.photo figcaption {
   text-align: center;
   color: Navy;
 }
+main h2 {
+  font-size: 2rem;
+  margin: 1rem 0 0 2%;
+  color: Navy;
+}
+main div.blog h3 {
+  font-size: 1.2rem;
+  color: #0000e6;
+}
+main div.blog article {
+  margin: 0.5rem 2%;
+  width: 96%;
+}
+main div.blog article p {
+  line-height: 130%;
+  color: Navy;
+}
 
 footer {
   background-color: Navy;
@@ -281,8 +298,57 @@ footer p {
     margin: 0.5rem 2%;
     float: left;
   }
+  main div.blog article {
+    width: 46%;
+    float: left;
+  }
+  main div.blog article:nth-child(2n + 1) {
+    clear: left;
+  }
 }
 /* end of media query for medium  */
+@media only screen and (min-width: 1140px) {
+  /*Body*/
+  div#wrapper {
+    max-width: 80rem;
+    margin: 2rem auto;
+    box-shadow: 0 0 10px black;
+  }
+
+  /*Nav*/
+  nav ul {
+    margin-left: 2%;
+  }
+  nav ul li {
+    width: auto;
+  }
+  nav ul li a {
+    padding: 0.5rem 1rem;
+  }
+  nav ul li:first-child {
+    border-left: 1px solid rgba(0, 0, 0, 0.4);
+  }
+  nav ul li:last-child {
+    border-right: 1px solid rgba(0, 0, 0, 0.4);
+  }
+
+  /*Main*/
+  main figure.photo {
+    width: 21%;
+    margin: 0.5rem 2%;
+    float: left;
+  }
+  main div.blog article {
+    width: 29.33%;
+    float: left;
+  }
+  main div.blog article:nth-child(2n + 1) {
+    clear: none;
+  }
+  main div.blog article:nth-child(3n + 1) {
+    clear: left;
+  }
+}
 /* end of media query for large */
 
 /*# sourceMappingURL=styles.css.map */

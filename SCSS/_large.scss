@@ -1,0 +1,46 @@
+/*Body*/
+div#wrapper {
+  max-width: 80rem;
+  margin: 2rem auto;
+  box-shadow: 0 0 10px black;
+}
+
+/*Nav*/
+nav {
+  ul {
+    margin-left: $gutter;
+    li {
+      width: auto;
+      a {
+        padding: 0.5rem 1rem;
+      }
+    }
+    li:first-child {
+      border-left: 1px solid rgba(0, 0, 0, 0.4);
+    }
+    li:last-child {
+      border-right: 1px solid rgba(0, 0, 0, 0.4);
+    }
+  }
+}
+
+/*Main*/
+main {
+  figure.photo {
+    width: 25% - $gutterDouble;
+    margin: 0.5rem $gutter;
+    float: left;
+  }
+  div.blog {
+    article {
+      width: 33.33% -$gutterDouble;
+      float: left;
+    }
+    article:nth-child(2n + 1) {
+      clear: none;
+    }
+    article:nth-child(3n + 1) {
+      clear: left;
+    }
+  }
+}

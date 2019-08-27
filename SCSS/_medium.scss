@@ -5,4 +5,13 @@ main {
     margin: 0.5rem $gutter;
     float: left;
   }
+  div.blog {
+    article {
+      width: 50%-$gutterDouble;
+      float: left;
+    }
+    article:nth-child(2n + 1) {
+      clear: left;
+    }
+  }
 }
